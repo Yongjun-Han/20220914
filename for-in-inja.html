@@ -13,8 +13,11 @@
 
     const root = document.getElementById("root");
     console.log(typeof root);
+    console.dir(root);
+
     let test = [];
     for(let key in root) {
+      console.dir(key);
       if(key.includes("is") && key[0] === "i") {
         test.push(key);
       }
